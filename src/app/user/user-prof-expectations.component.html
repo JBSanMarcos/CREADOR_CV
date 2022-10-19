@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-sm-12">
+    <i class="expectations-icon"></i>
+    <h2>Profesional Expectations & Personal Note</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 proffesional-expecattions">
+      <p class="description">
+      <inline-editor type="textarea" [(ngModel)]="proffesionalExpectations" (onSave)="savePersonalInfo('professionalExpectations', $event)"
+        cols="70" rows="5" name="customEditableText" [saveOnBlur]="true" [hideButtons]="true" id="inline-user-professional-expectations"></inline-editor>
+    </p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-12 proffesional-expecattions">
+  <p class="description">
+      <inline-editor type="textarea" [(ngModel)]="personalNote" (onSave)="savePersonalInfo('personalNote', $event)" cols="70" rows="5"
+        name="customEditableText" [saveOnBlur]="true" [hideButtons]="true" id="inline-user-personal-note"></inline-editor>
+    </p>
+  </div>
+</div>
